@@ -8,29 +8,32 @@
   </head>
   <body>
     <nav>
-      <a href="../index.html"> Home </a> |
-      <a href="../contacts/index.html"> Contacts </a> |
-      <a href="../projects/index.html"> Projects </a> |
-      <a href="./index.html"> Resume </a> |
+      <a href="../index.html"> Home </a>
+      <a class="current" href="../contacts/index.html"> Contacts </a>
+      <a href="../projects/index.html"> Projects </a>
+      <a href="./index.html"> Resume </a>
       <a href="https://github.com/jgarciapalacios" target="_blank"> Github </a>
     </nav>
-    <form action="mailto:javs111103@gmail.com" method="GET">
-      <label>
-        Email:
-        <input name="email" type="email" required />
-      </label>
-      <br />
-      <label>
-        Subject:
-        <input name="subject" />
-      </label>
-      <br />
-      <label>
-        Message:
-        <textarea name="body" rows="4"></textarea>
-      </label>
-      <br />
-      <button>Send</button>
-    </form>
+    <div id="contact-page">
+      <h1>Contact Me</h1>
+      <form action="mailto:javs111103@gmail.com" method="GET">
+        <label>
+          Email:
+          <input name="email" type="email" required />
+        </label>
+        <br />
+        <label>
+          Subject:
+          <input name="subject" />
+        </label>
+        <br />
+        <label>
+          Message:
+          <textarea name="body" rows="4"></textarea>
+        </label>
+        <br />
+        <button>Send</button>
+      </form>
+    </div>
   </body>
 </html>
