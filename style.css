@@ -1,5 +1,5 @@
 :root {
-  --color-accent: rgb(10, 95, 10);
+  --color-accent: rgb(60, 157, 60);
 }
 
 html {
@@ -7,6 +7,7 @@ html {
   height: 100%;
   box-sizing: border-box;
   accent-color: var(--color-accent);
+  color-scheme: light dark;
 }
 
 body {
@@ -73,6 +74,13 @@ h6 {
   }
 }
 
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 #contact-page form {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -88,16 +96,20 @@ h6 {
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-}
-.projects article {
-  grid-template-rows: subgrid;
-  grid-row: span 3;
-  margin: 0;
+  gap: 1em;
+
+  article {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row-end: span 3;
+    margin: 0;
+  }
 }
 
 nav {
+  --border-color: oklch(50% 10% 200 / 40%);
   display: flex;
-  border-bottom: 2px solid oklch(80% 3% 200);
+  border-bottom: 2px solid var(--border-color);
 }
 
 nav a {
@@ -109,7 +121,7 @@ nav a {
 }
 
 nav a.current {
-  border-bottom: 0.2em solid oklch(80% 3% 200);
+  border-bottom: 0.2em solid oklch(50% 10% 200 / 40%);
   padding-bottom: 0.4em;
   color: var(--color-accent);
 }
@@ -118,4 +130,19 @@ nav a:hover {
   color: var(--color-accent);
   padding-bottom: 0.4em;
   border-bottom: 0.2em solid var(--color-accent);
+  background-color: oklch(50% 10% 200 / 40%);
+}
+
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: inline-flex;
+  gap: 4px;
+}
+
+.a3 {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10em;
 }
