@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vis & Society Assignment 3</title>
+    <link
+      rel="stylesheet"
+      href="https://vis-society.github.io/assignments/report.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <small>Assignment 4</small>
+        Persuasive or Deceptive Visualization?
+      </h1>
+
+      <p><strong>Javier Garcia</strong> — <em>javi11@mit.edu</em></p>
+    </header>
+
+    <main>
+      <h2>
+        Proposition: NYC police disproportionately use excessive force against
+        communities of color.
+      </h2>
+
+      <section>
+        <h3>FOR the Proposition</h3>
+
+        <figure>
+          <img src="discrimination.jpeg" alt="" />
+          <figcaption>
+            NYC police disproportionately use excessive force against
+            communities of color, then dismiss any resistance. Demographic data
+            is taken from the US Census Bureau.
+          </figcaption>
+        </figure>
+
+        <p>Design Decisions and Rationale:</p>
+
+        <ul>
+          <li>
+            <strong
+              >Mapping Population Demographics by Precinct (Earnestness Score:
+              +1.5)</strong
+            >
+            <br />The map is color-coded by the majority racial group in each
+            precinct (given by the US Census Bureau), allowing readers to easily
+            identify where communities of color are concentrated. By overlaying
+            complaint data on top, the visualization naturally highlights
+            disparities in excessive force complaints without needing additional
+            explanation. One small critique might be that diverse communites may
+            have only a slight a majority, thereby making the coloring of the
+            whole precinct one color misleading; however, in practice there are
+            very few, if any, communities like this. Overall, this was just the
+            natural choice.
+          </li>
+
+          <li>
+            <strong
+              >Using Blue Opaque Circles to Represent the Magnitude of
+              Complaints for each Precinct (Earnestness Score: -1)</strong
+            >
+            <br />The blue circles cluster around communities of color,
+            particularly Black and Hispanic-majority precincts. This visually
+            reinforces the argument that these communities experience more
+            excessive force complaints. Blue is also associated with police,
+            making the meaning of the circles intuitive. However, the circles
+            are misleading considering the fact that the precincts with the
+            largest circles are also the ones with the most complaints. In fact,
+            if you subsituted execessive force for any other complaint
+            allegation, the chart would've looked exactly the same, making this
+            graph extremely misleading. For an alternative, I did think of using
+            barcharts to overlay on the map for each precinct, but it would have
+            quickly got messy as it would cover up precinct numbers and colors.
+          </li>
+
+          <li>
+            <strong
+              >Zooming in on Precinct 75 for Additional Context (Earnestness
+              Score: -.5)</strong
+            >
+            <br />Precinct 75 stands out as having one of the highest numbers of
+            excessive force complaints. Naturally, readers will be curious as to
+            why the circle is so large. Therefore, by zooming in, I suggest to
+            readers that they do not need to go do their own research about
+            precinct 75 because I have the data for them, allowing me to set the
+            narrative. Once they're zoomed in; I show the demographics of
+            precinct 75 next to that of nyc more generally, suggesting that its
+            the difference in demographics that's the reason for the high number
+            of complaints. Although not motivated by the best intentions, the
+            fact is that there is still a huge discrepency between precinct 75
+            and other precincts. I think it's valid to suggest that the
+            difference in demographics is at least part of the reason. A
+            possible alternative was to compare multiple precincts side by side,
+            but focusing on one strong example is more compelling.
+          </li>
+
+          <li>
+            <strong
+              >Comparing Substantiation Rates with a Side-by-Side View
+              (Earnestness Score: +1)</strong
+            >
+            <br />Displaying both the citywide substantiation rate (12.7%) and
+            Precinct 75’s lower rate (7.5%) was a deliberate choice. While some
+            may argue that communities of color are simply more likely to be in
+            situations where excessive force is necessary, the caption
+            intentionally frames the issue as complaints being dismissed. Using
+            the word "dismissed" shifts the focus from potential justification
+            of force to a lack of police accountability. <br />Now with this
+            framing, the bolded text in the caption highlights that communities
+            of color are twice as likely to have their complaints dismissed,
+            driving the point home that communites of color are
+            disproportionately affected, even after the actual altercation.
+            Originally, I considered framing the comparison as "92.5% dismissal
+            rate vs. 87.3% dismissal rate," but this lacked the same impact. The
+            numbers 7.5% vs. 12.7% create a much starker contrast—12.7% feels
+            significantly larger than 7.5%, whereas 92% and 87% seem much closer
+            together. Using the lower absolute values makes the difference feel
+            more dramatic and reinforces the disparity in substantiation rates
+            more effectively. <br />While this comparison is valid and
+            revealing, it is based on a single case study, which could be seen
+            as misleading.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>AGAINST the Proposition</h3>
+
+        <figure>
+          <img src="./anti-discrimination.png" alt="" />
+          <figcaption>BRIEF CAPTION HERE.</figcaption>
+        </figure>
+
+        <p>Design Decisions and Rationale:</p>
+
+        <ul>
+          <li>
+            <strong
+              >Using a Y-axis Scale of 100% to Minimize Differences (Earnestness
+              Score: +1)</strong
+            >
+            <br />Although most of the data falls below 20%, I chose to set the
+            Y-axis scale to 100%. This decision visually compresses the
+            differences between racial groups, making any disparities in
+            substantiation rates appear smaller. By reducing visual contrast,
+            the argument that excessive force disproportionately affects
+            communities of color becomes less immediately apparent. However, any
+            other choice could be argued to be just as misleading.
+          </li>
+
+          <li>
+            <strong
+              >Applying a 3-Year Rolling Average to Smooth Out Major Jumps
+              (Earnestness Score: -1)</strong
+            >
+            <br />Sudden spikes in substantiation rates could indicate
+            meaningful shifts in how complaints are handled, but applying a
+            3-year rolling average helps neutralize those changes. This ensures
+            no single moment stands out, making it harder for readers to point
+            to instances where racial disparities might have been more extreme.
+            The result is a visualization that suggests subtle, rather than
+            dramatic, differences over time.
+          </li>
+
+          <li>
+            <strong
+              >Framing Substantiation Rate as a Response to Broader Events, Not
+              Race (Earnestness Score: -2)</strong
+            >
+            <br />Instead of emphasizing racial disparities, I structured the
+            visualization around major U.S. events—such as Broken Windows
+            Policing, 9/11 and Increased Security, and The Great Recession. This
+            choice shifts the narrative away from race and towards external
+            societal factors that influenced policing. For example, I could have
+            chosen to include the death of Eric Garner in 2014 which sparked
+            massive outcry for police reform; Instead I chose to include that
+            Stop and Frisk ended the year earlier. Because substantiation rates
+            seem to increase afterwards, readers are more likely to attribute
+            better rates to the ending of Stop and Frisk. The takeaway is that
+            substantiation rates are largely determined by historical context,
+            not racial bias.
+          </li>
+
+          <li>
+            <strong
+              >Including the Overall Substantiation Rate to Downplay Racial
+              Differences (Earnestness Score: +0.5)</strong
+            >
+            <br />By adding a general substantiation rate for all complaints, I
+            reinforce the idea that excessive force complaints have low
+            substantiation rates across the board, regardless of race. This can
+            lead readers to conclude that any differences between racial groups
+            are minor and likely due to statistical noise rather than systemic
+            bias.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Final Reflection</h2>
+
+        <p>
+          Throughout this process, I found that my ability to create persuasive
+          visualizations often came from understanding the opposing perspective
+          just as well as the one I aimed to support. Interestingly, when I set
+          out to support a proposition, I was often able to more clearly
+          identify evidence against it, and vice versa. This suggests that
+          effective data storytelling requires deep engagement with both sides
+          of an argument—not just to counter opposing viewpoints, but to ensure
+          that the visualization is well-reasoned and ethical.
+        </p>
+        <p></p>
+      </section>
+    </main>
+  </body>
+</html>
